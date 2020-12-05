@@ -34,8 +34,9 @@ do
     mpiexec -n $i python -W ignore /scratch/ejakupov/Agave/benchmarks/1-full_IO/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.h5md $1
 done
 
-mkdir -p /scratch/ejakupov/Agave/benchmarks/results/$1/slurm_output/6node
-mv slurm.$SLURM_JOB_ID.out /scratch/ejakupov/Agave/benchmarks/results/$1/slurm_output/6node
-mv slurm.$SLURM_JOB_ID.err /scratch/ejakupov/Agave/benchmarks/results/$1/slurm_output/6node
+SLURM_OUTPUT=/scratch/ejakupov/Agave/benchmarks/1-full_IO/results/$1/slurm_output/6node
+mkdir -p $SLURM_OUTPUT
+mv slurm.$SLURM_JOB_ID.out $SLURM_OUTPUT
+mv slurm.$SLURM_JOB_ID.err $SLURM_OUTPUT
 
 rm -r $testdir
