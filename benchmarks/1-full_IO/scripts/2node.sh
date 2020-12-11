@@ -31,7 +31,7 @@ export OMP_NUM_THREADS=1
 
 for i in 28 42 56
 do
-    mpiexec -n $i python -W ignore /scratch/ejakupov/Agave/benchmarks/1-full_IO/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.h5md $1
+    mpiexec -n $i python -W ignore /scratch/ejakupov/Agave/benchmarks/1-full_IO/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.h5md $1
 done
 
 SLURM_OUTPUT=/scratch/ejakupov/Agave/benchmarks/1-full_IO/results/$1/slurm_output/2node
