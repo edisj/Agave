@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --nodes=1  # number of nodes
-#SBATCH --ntasks-per-node=1  # number of cores
-#SBATCH --partition=compute       # partition
-#SBATCH -e %j.err # file to save job's STDERR (%j = JobId)
+#SBATCH -N 1  # number of nodes
+#SBATCH -n 1  # number of cores
+#SBATCH -t 0-1:00:00   # time in d-hh:mm:ss
+#SBATCH -p serial       # partition
+#SBATCH -q normal       # QOS
 #SBATCH -o %j.out # file to save job's STDOUT (%j = JobId)
-#SBATCH --export=ALL
-#SBATCH -t 01:00:00   # time in hh:mm:ss
+#SBATCH -e %j.err # file to save job's STDERR (%j = JobId)
 #SBATCH --mail-type=ALL # Send an e-mail when a job starts, stops, or fails
 #SBATCH --mail-user=ejakupov@asu.edu # Mail-to address
 
