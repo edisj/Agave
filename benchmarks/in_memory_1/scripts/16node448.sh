@@ -6,8 +6,8 @@
 #SBATCH -p parallel       # partition
 #SBATCH -C Broadwell
 #SBATCH -q normal       # QOS
-#SBATCH -o 16node.%j.out # file to save job's STDOUT (%j = JobId)
-#SBATCH -e 16node.%j.err # file to save job's STDERR (%j = JobId)
+#SBATCH -o 16node448.%j.out # file to save job's STDOUT (%j = JobId)
+#SBATCH -e 16node448.%j.err # file to save job's STDERR (%j = JobId)
 #SBATCH --mail-type=ALL # Send an e-mail when a job starts, stops, or fails
 #SBATCH --mail-user=ejakupov@asu.edu # Mail-to address
 

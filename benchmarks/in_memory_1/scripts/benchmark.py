@@ -51,29 +51,16 @@ def benchmark(topology, trajectory):
     # intialize time counters
     total_io = 0
     total_rmsd = 0
-    total_copy_data = 0
-    total_copy_box = 0
-    total_get_dataset = 0
-    total_set_ts_position = 0
-    total_convert_units = 0
     rmsd_array = np.empty(bsize, dtype=float)
-    for j, i in enumerate(range(start, stop)):
+    for i, frame in enumerate(range(len(u.trajectory))):
         # input/output time
         with timeit() as io:
-            ts = u.trajectory[i]
+            ts = u.trajectory[frame]
         total_io += io.elapsed
-        total_copy_data += ts.timing.copy_data
-        total_copy_box += ts.timing.box
-        total_get_dataset += ts.timing.get_position
-        total_set_ts_position += ts.timing.set_position
-        total_convert_units += ts.timing.convert_units
         # rmsd calculation time
         with timeit() as rms:
-            rmsd_array[j] = rmsd(CA.positions, x_ref, superposition=True)
+            rmsd_array[i] = rmsd(CA.positions, x_ref, superposition=True)
         total_rmsd += rms.elapsed
-    t_open_traj = ts.timing.open_traj
-    t_n_atoms = ts.timing.n_atoms
-    t_set_units = ts.timing.set_units
 
     # checking for straggling processes
     with timeit() as wait_time:
@@ -96,17 +83,9 @@ def benchmark(topology, trajectory):
         u.trajectory.close()
     t_close_traj = close_traj.elapsed
 
-    # gather times into rank 0
-    t_wait = comm.gather(t_wait, root=0)
-    t_comm_gather = comm.gather(t_comm_gather, root=0)
-    t_close_traj = comm.gather(t_close_traj, root=0)
-    total_time = comm.gather(total_time, root=0)
-
     # collect all timings into this array
-    block_times = np.array((rank, t_init, t_init_top, t_init_traj, t_open_traj,
-                            t_mem, t_n_atoms, t_set_units, total_io, total_io/bsize,
-                            total_copy_data, total_copy_box, total_get_dataset,
-                            total_set_ts_position, total_convert_units,
+    block_times = np.array((rank, t_init, t_init_top, t_init_traj,
+                            t_mem, total_io, total_io/bsize,
                             total_rmsd, total_rmsd/bsize, t_wait, t_comm_gather,
                             t_close_traj, total_time),
                             dtype=float)
@@ -236,10 +215,8 @@ if __name__ == "__main__":
         np.save(os.path.join(data_path, args.directory_name + '/',  f'{size}process_times.npy'), times_array)
         np.save(os.path.join(data_path, args.directory_name + '/',  f'{size}process_rmsd.npy'), rmsd_array)
 
-        columns = ['rank', 't_init', 't_init_top', 't_init_traj', 't_open_traj',
-                    't_to_mem', 't_n_atoms', 't_set_units', 't_io', 't_io/frame',
-                    't_copy_data', 't_copy_box', 't_get_pos',
-                    't_set_ts_position', 't_convert_units',
+        columns = ['rank', 't_init', 't_init_top', 't_init_traj',
+                    't_to_mem', 't_io', 't_io/frame',
                     't_rmsd', 't_rmsd/frame', 't_wait', 't_comm',
                     't_close_traj', 'total_time']
         df = pd.DataFrame(times_array, columns=columns)
