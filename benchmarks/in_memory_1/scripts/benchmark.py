@@ -89,11 +89,11 @@ def benchmark(topology, trajectory):
                             total_rmsd, total_rmsd/bsize, t_wait, t_comm_gather,
                             t_close_traj, total_time),
                             dtype=float)
-
+    n_columns = len(block_times)
     # gather times from each block into times_array
     times_buffer = None
     if rank == 0:
-        times_buffer = np.empty(len(block_times)*size, dtype=float)
+        times_buffer = np.empty(n_columns*size, dtype=float)
     comm.Gather(sendbuf=block_times, recvbuf=times_buffer, root=0)
 
     if rank == 0:
