@@ -2,7 +2,7 @@
 
 #SBATCH -N 6  # number of nodes
 #SBATCH -n 168  # number of cores
-#SBATCH -t 0-00:30:00   # time in d-hh:mm:ss
+#SBATCH -t 0-01:00:00   # time in d-hh:mm:ss
 #SBATCH -p parallel       # partition
 #SBATCH -C Broadwell
 #SBATCH -q normal       # QOS
