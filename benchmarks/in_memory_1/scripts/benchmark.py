@@ -245,4 +245,4 @@ if __name__ == "__main__":
                     't_rmsd', 't_rmsd/frame', 't_wait', 't_comm',
                     't_close_traj', 'total_time']
         df = pd.DataFrame(times_array, columns=columns)
-        df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{size}processes.csv')
+        df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{size}processes.csv'))
