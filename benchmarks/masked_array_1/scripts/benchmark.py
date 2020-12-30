@@ -47,7 +47,7 @@ def benchmark(topology, trajectory):
     total_io = 0
     total_rmsd = 0
     rmsd_array = np.empty(bsize, dtype=float)
-    for i, frame in enumerate(range(len(u.trajectory))):
+    for i, frame in enumerate(range(start, stop)):
         # input/output time
         with timeit() as io:
             ts = u.trajectory[frame]
@@ -80,7 +80,7 @@ def benchmark(topology, trajectory):
 
     # collect all timings into this array
     block_times = np.array((rank, t_init, t_init_top, t_init_traj,
-                            t_mem, total_io, total_io/bsize,
+                            total_io, total_io/bsize,
                             total_rmsd, total_rmsd/bsize, t_wait, t_comm_gather,
                             t_close_traj, total_time),
                             dtype=float)
@@ -211,7 +211,7 @@ if __name__ == "__main__":
         np.save(os.path.join(data_path, args.directory_name + '/',  f'{size}process_rmsd.npy'), rmsd_array)
 
         columns = ['rank', 't_init', 't_init_top', 't_init_traj',
-                    't_to_mem', 't_io', 't_io/frame',
+                    't_io', 't_io/frame',
                     't_rmsd', 't_rmsd/frame', 't_wait', 't_comm',
                     't_close_traj', 'total_time']
         df = pd.DataFrame(times_array, columns=columns)
