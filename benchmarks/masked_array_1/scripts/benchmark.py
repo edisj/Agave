@@ -27,11 +27,11 @@ def benchmark(topology, trajectory):
             u = mda.Universe(topology)
         CA = u.select_atoms("protein and name CA")
         x_ref = CA.positions.copy()
-        n_frames = len(u.trajectory)
 
         with timeit() as init_traj:
             u.load_new(trajectory, driver="mpio", comm=comm, sub=CA.indices)
 
+        n_frames = len(u.trajectory)
         slices = make_balanced_slices(n_frames, size, start=0, stop=n_frames, step=1)
         # give each rank unique start and stop points
         start = slices[rank].start
