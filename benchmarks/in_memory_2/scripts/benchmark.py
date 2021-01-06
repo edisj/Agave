@@ -76,7 +76,7 @@ def benchmark(topology, trajectory):
     t_comm_gather = comm_gather.elapsed
 
     # total benchmark time per rank
-    total_time = t_init + total_io + total_rmsd + t_wait + t_comm_gather
+    total_time = t_init + t_mem + total_io + total_rmsd + t_wait + t_comm_gather
 
     # close trajectory now to avoid MPI errors when MPI finalizes
     with timeit() as close_traj:
