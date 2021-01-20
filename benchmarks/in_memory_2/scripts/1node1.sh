@@ -1,11 +1,10 @@
 #!/bin/bash
 
 #SBATCH -N 1  # number of nodes
-#SBATCH -n 1  # number of cores
-#SBATCH -t 0-2:00:00   # time in d-hh:mm:ss
+#SBATCH -n 28  # number of cores
+#SBATCH -t 0-3:00:00   # time in d-hh:mm:ss
 #SBATCH -p parallel       # partition
 #SBATCH -C Broadwell
-#SBATCH --mem=256G
 #SBATCH -q normal       # QOS
 #SBATCH -o 1node.%j.out # file to save job's STDOUT (%j = JobId)
 #SBATCH -e 1node.%j.err # file to save job's STDERR (%j = JobId)

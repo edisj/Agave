@@ -5,7 +5,6 @@
 #SBATCH -t 0-2:00:00   # time in d-hh:mm:ss
 #SBATCH -p parallel       # partition
 #SBATCH -C Broadwell
-#SBATCH --mem=256G
 #SBATCH -q normal       # QOS
 #SBATCH -o 1node28.%j.out # file to save job's STDOUT (%j = JobId)
 #SBATCH -e 1node28.%j.err # file to save job's STDERR (%j = JobId)
