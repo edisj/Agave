@@ -52,7 +52,7 @@ def benchmark(trajectory, indices, n_frames):
             pos = f['particles/trajectory/position/value'][ts]
             box = f['particles/trajectory/box/edges/value'][ts]
             step = f['observables/step/value'][ts]
-            time = ['particles/trajectory/position/time'][ts]
+            time = f['particles/trajectory/position/time'][ts]
         total_io += io.elapsed
         # rmsd calculation time
         with timeit() as rms:
@@ -78,10 +78,6 @@ def benchmark(trajectory, indices, n_frames):
     with timeit() as close_file:
         f.close()
     t_close_file = close_file.elapsed
-
-    # gather communication and total times into rank 0
-    t_comm_gather = comm.gather(t_comm_gather, root=0)
-    total_time = comm.gather(total_time, root=0)
 
     block_times = np.array((rank, t_init, t_open_file, total_io, total_io/bsize,
                             total_rmsd, total_rmsd/bsize, t_wait, t_comm_gather,
