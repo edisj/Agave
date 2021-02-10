@@ -1,0 +1,1909 @@
++ module purge
++ '[' purge == load ']'
+++ /usr/bin/modulecmd bash purge
++ eval
++ '[' purge == load ']'
++ module load anaconda/py3
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load anaconda/py3
+                                                                 
+                                                                                
+##############################################                                  
+INFORMATION                                                                     
+##############################################                                  
+                                                                                
+You have loaded the base anaconda environment. For specialized environments,    
+you must first enable them with `source activate [env]`.                        
+                                                                                
+For a full list of environments, type `conda env list`                          
+  
++ eval INCLUDE=/packages/7x/anaconda3/5.3.0/include ';export' 'INCLUDE;INFOPATH=/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3' ';export' '_LMFILES_;unset' 'MODULEBUILDRC;unset' 'PERL5LIB;unset' 'PERL_LOCAL_LIB_ROOT;unset' 'PERL_MB_OPT;unset' 'PERL_MM_OPT;'
+++ INCLUDE=/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3
+++ export _LMFILES_
+++ unset MODULEBUILDRC
+++ unset PERL5LIB
+++ unset PERL_LOCAL_LIB_ROOT
+++ unset PERL_MB_OPT
+++ unset PERL_MM_OPT
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load anaconda/py3
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ module load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+
+
+##############################################
+INFORMATION
+##############################################
+
+OpenMPI uses mpirun or mpiexec by default.
+
+To use srun, you must include the --mpi=pmi2 option.
+
+(e.g. srun --mpi=pmi2 ./executable)
+
+See the manpages for mpirun and srun for more
+information (e.g. man srun).
+
+
++ eval HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock ';export' 'HDF5_DIR;INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include' ';export' 'INCLUDE;INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;JAVA_HOME=/packages/7x/java/8u162' ';export' 'JAVA_HOME;LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;ZLIBCFLAGS=\' -I/packages/7x/zlib/1.2.8/include ';export' 'ZLIBCFLAGS;ZLIBLDFLAGS=\' -L/packages/7x/zlib/1.2.8/lib ';export' 'ZLIBLDFLAGS;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' '_LMFILES_;'
+++ HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock
+++ export HDF5_DIR
+++ INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ JAVA_HOME=/packages/7x/java/8u162
+++ export JAVA_HOME
+++ LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ ZLIBCFLAGS=' -I/packages/7x/zlib/1.2.8/include'
+++ export ZLIBCFLAGS
+++ ZLIBLDFLAGS=' -L/packages/7x/zlib/1.2.8/lib'
+++ export ZLIBLDFLAGS
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export _LMFILES_
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load java/latest
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hwloc/1.11.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load openmpi/3.0.0-gnu-stock
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load zlib/1.2.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load szip/2.1
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ source activate mda2
+++ _CONDA_ROOT=/packages/7x/anaconda3/5.3.0
+++ . /packages/7x/anaconda3/5.3.0/etc/profile.d/conda.sh
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n x ']'
++++ '[' -n '' ']'
++++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++++ dirname /packages/7x/anaconda3/5.3.0/bin
++++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate mda2
+++ '[' 2 -lt 1 ']'
+++ local cmd=activate
+++ shift
+++ case "$cmd" in
+++ __conda_activate activate mda2
+++ '[' -n '' ']'
+++ local cmd=activate
+++ shift
+++ local ask_conda
+++ OLDPATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ __add_sys_prefix_to_path
+++ '[' -n '' ']'
++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++ SYSP=/packages/7x/anaconda3/5.3.0/bin
++++ dirname /packages/7x/anaconda3/5.3.0/bin
+++ SYSP=/packages/7x/anaconda3/5.3.0
+++ '[' -n '' ']'
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
++++ PS1=
++++ /packages/7x/anaconda3/5.3.0/bin/conda shell.posix activate mda2
+++ ask_conda='PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
+++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ eval 'PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
++++ PS1='(mda2) '
++++ export PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=mda2
++++ CONDA_DEFAULT_ENV=mda2
++++ export 'CONDA_PROMPT_MODIFIER=(mda2) '
++++ CONDA_PROMPT_MODIFIER='(mda2) '
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ testdir=/scratch/ejakupov/Agave/temp/7496330
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ mpiexec -n 168 python -W ignore /scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py /scratch/ejakupov/Agave/temp/7496330/YiiP_system.pdb /scratch/ejakupov/Agave/temp/7496330/YiiP_system_9ns_center100x.h5md run5/6node_3
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac0e9b298b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abfea5cc8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aefb2d198b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac8936cb8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af957fee8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b964a4138b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b36a60d18b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ade75c688b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b16de57c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abb9da4e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2adec2cc38b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae0ec2318b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b16346fa8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acd388d08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba247db08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7a61baf8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b49b60f48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acedc8888b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b31e10848b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b06a9f5f8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6d1c4948b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2adf6954e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad248f4e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b02922e18b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6577c838b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b17df2338b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0dcf2cd8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac5050f18b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b62249e38b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ace051be8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b30f77e28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b78faf1a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8910dd48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b49eab5e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aac0f2678b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2a4d8db8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2adeaa4968b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1db52b48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b80bb02f8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad23a0a08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b08d1c3e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acd0ff588b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5e0ac628b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af6f414a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b815dce28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7b5cad58b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b033b49e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aab44e528b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1b8d9378b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b84c5a598b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b96bd1b48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b51de5b98b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b36c5ee98b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b06829428b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b55165ad8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b16130cd8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3a124ee8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b668fb018b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b53a54718b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b73a3d268b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b565ee6c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b829c5978b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae90b2968b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8a3b01d8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b93c800a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6dc30b58b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2accd5e8f8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aeb8f3368b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b47ca2648b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b50fe9968b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1d2edaa8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6dd1c678b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba8495a58b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b09fdc558b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2c8bb7d8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1a98f578b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba4924da8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af837da68b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2747c7c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7b3893a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b249c1df8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acaecc9a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6e59c268b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b052438c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba468acc8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4c9653b8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae9455678b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aebe8fed8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3f1df8a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b84920c48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0a6d5168b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad39fab08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba3102918b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af6684a08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae075db18b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2325e288b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b95733e18b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4c3b98b8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab7b79258b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac0328538b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abd57ca08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7bd83df8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7b3219b8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b30ff6cb8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b92d93118b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b853ca298b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af21ddfe8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b41504b58b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba8785a28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac4d2b888b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab2b869e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b530b01c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7a5da7f8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ada798618b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9ac91768b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac79bbc28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9dd73f08b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b614e3f48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b01687568b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b84f8ba28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab024bf88b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7960f588b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b408f21e8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae2347fa8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b996ffe48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b07de46b8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7856c828b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1b649d68b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abdc9ecd8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b385ec068b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab90395b8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aac2aff68b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad59c3008b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba5b58958b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b74742bc8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b70468ca8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4e817f48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b23b53eb8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b02ebf4c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6fc55308b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3279be48b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b304c9988b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3ad5f1c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad73bcf98b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b65587578b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b237a94a8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba67e4088b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b915603c8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7d0dce68b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b36b81278b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aad3dd178b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5a765ee8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b98050ff8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8aacc148b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0449b728b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5503ade8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b72aae708b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3260f558b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b56054538b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8c347d98b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae46b1ad8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab72d3d68b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0a37df98b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af776bd88b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b93fcce28b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b78d7fec8b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0c4fd028b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 218, in <module>
+    df = pd.DataFrame(times_array, columns=columns)
+NameError: name 'pd' is not defined
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9a06e088b0>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2161, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 781, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[46350,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
++ rm -r /scratch/ejakupov/Agave/temp/7496330

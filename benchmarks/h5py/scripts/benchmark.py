@@ -73,7 +73,7 @@ def benchmark(trajectory, indices, n_frames):
     t_comm_gather = comm_gather.elapsed
 
     # total benchmark time per rank
-    total_time = t_init + total_io + total_rmsd + t_comm_gather
+    total_time = t_init + total_io + total_rmsd + t_comm_gather + t_wait
 
     with timeit() as close_file:
         f.close()
