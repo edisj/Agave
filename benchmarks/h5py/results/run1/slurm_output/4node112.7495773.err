@@ -1,0 +1,2017 @@
++ module purge
++ '[' purge == load ']'
+++ /usr/bin/modulecmd bash purge
++ eval
++ '[' purge == load ']'
++ module load anaconda/py3
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load anaconda/py3
+                                                                 
+                                                                                
+##############################################                                  
+INFORMATION                                                                     
+##############################################                                  
+                                                                                
+You have loaded the base anaconda environment. For specialized environments,    
+you must first enable them with `source activate [env]`.                        
+                                                                                
+For a full list of environments, type `conda env list`                          
+  
++ eval INCLUDE=/packages/7x/anaconda3/5.3.0/include ';export' 'INCLUDE;INFOPATH=/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3' ';export' '_LMFILES_;unset' 'MODULEBUILDRC;unset' 'PERL5LIB;unset' 'PERL_LOCAL_LIB_ROOT;unset' 'PERL_MB_OPT;unset' 'PERL_MM_OPT;'
+++ INCLUDE=/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3
+++ export _LMFILES_
+++ unset MODULEBUILDRC
+++ unset PERL5LIB
+++ unset PERL_LOCAL_LIB_ROOT
+++ unset PERL_MB_OPT
+++ unset PERL_MM_OPT
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load anaconda/py3
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ module load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+
+
+##############################################
+INFORMATION
+##############################################
+
+OpenMPI uses mpirun or mpiexec by default.
+
+To use srun, you must include the --mpi=pmi2 option.
+
+(e.g. srun --mpi=pmi2 ./executable)
+
+See the manpages for mpirun and srun for more
+information (e.g. man srun).
+
+
++ eval HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock ';export' 'HDF5_DIR;INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include' ';export' 'INCLUDE;INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;JAVA_HOME=/packages/7x/java/8u162' ';export' 'JAVA_HOME;LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;ZLIBCFLAGS=\' -I/packages/7x/zlib/1.2.8/include ';export' 'ZLIBCFLAGS;ZLIBLDFLAGS=\' -L/packages/7x/zlib/1.2.8/lib ';export' 'ZLIBLDFLAGS;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' '_LMFILES_;'
+++ HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock
+++ export HDF5_DIR
+++ INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ JAVA_HOME=/packages/7x/java/8u162
+++ export JAVA_HOME
+++ LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ ZLIBCFLAGS=' -I/packages/7x/zlib/1.2.8/include'
+++ export ZLIBCFLAGS
+++ ZLIBLDFLAGS=' -L/packages/7x/zlib/1.2.8/lib'
+++ export ZLIBLDFLAGS
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export _LMFILES_
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load java/latest
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hwloc/1.11.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load openmpi/3.0.0-gnu-stock
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load zlib/1.2.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load szip/2.1
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ source activate mda2
+++ _CONDA_ROOT=/packages/7x/anaconda3/5.3.0
+++ . /packages/7x/anaconda3/5.3.0/etc/profile.d/conda.sh
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n x ']'
++++ '[' -n '' ']'
++++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++++ dirname /packages/7x/anaconda3/5.3.0/bin
++++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate mda2
+++ '[' 2 -lt 1 ']'
+++ local cmd=activate
+++ shift
+++ case "$cmd" in
+++ __conda_activate activate mda2
+++ '[' -n '' ']'
+++ local cmd=activate
+++ shift
+++ local ask_conda
+++ OLDPATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ __add_sys_prefix_to_path
+++ '[' -n '' ']'
++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++ SYSP=/packages/7x/anaconda3/5.3.0/bin
++++ dirname /packages/7x/anaconda3/5.3.0/bin
+++ SYSP=/packages/7x/anaconda3/5.3.0
+++ '[' -n '' ']'
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
++++ PS1=
++++ /packages/7x/anaconda3/5.3.0/bin/conda shell.posix activate mda2
+++ ask_conda='PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
+++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ eval 'PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
++++ PS1='(mda2) '
++++ export PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=mda2
++++ CONDA_DEFAULT_ENV=mda2
++++ export 'CONDA_PROMPT_MODIFIER=(mda2) '
++++ CONDA_PROMPT_MODIFIER='(mda2) '
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ testdir=/scratch/ejakupov/Agave/temp/7495760
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ mpiexec -n 112 python -W ignore /scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py /scratch/ejakupov/Agave/temp/7495760/YiiP_system.pdb /scratch/ejakupov/Agave/temp/7495760/YiiP_system_9ns_center100x.h5md run1/4node_1
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 209, in <module>
+    times_array, rmsd_array = benchmark(trajectory, indices, n_frames)
+  File "/scratch/ejakupov/Agave/benchmarks/h5py/scripts/benchmark.py", line 55, in benchmark
+    time = ['particles/trajectory/position/time'][ts]
+IndexError: list index out of range
+Exception ignored in: <function ReaderBase.__del__ at 0x2b83cf4f7940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad0e4c19940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4516345940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b78a0016940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab03f383940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5d7e846940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af3a661f940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab296850940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6297467940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b031bb63940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af4ab3bd940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad6cedcc940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4538a8f940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9a703af940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af9ebfe5940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba7b2263940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b278ac95940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af31861b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab1e6f4e940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2e9d256940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b97ef17c940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b542ebe0940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b46c8f6c940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b89896fb940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8618d60940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b059660a940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aecbf07c940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5b4f0c0940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad693dfc940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac8bb1cc940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4ce41ff940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3ead629940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5fe7801940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aaf99e8f940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8396cbc940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2afdb56cb940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9b973f5940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2adb6fa7c940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b372fc94940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b16a4975940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2f1a8de940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9307039940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6b35e0e940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aaee72b0940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4aa2985940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9829551940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8b89e07940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ace658ad940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad9c9c26940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad679495940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4daa578940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aabc506c940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b469a421940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac215708940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba5081b4940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba4b2f49940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b41de0cd940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b3b2270f940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b999b6e4940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b35be626940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7e4cf80940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7dac3ee940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aab0a857940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b57e26e7940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acc7fc20940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab5a72e5940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac1ea6a6940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6ede958940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b8487228940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab1ab441940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0b28009940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6327164940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac603792940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae5f070b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5aa6259940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae1c2fe7940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ba2e52bf940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2afddc3db940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b9104738940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b560f9fd940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aba5c5c4940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b624356b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac8ed8eb940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b5b12913940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b4f91228940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7de4f65940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af21071d940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b6786cb4940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2acf89c77940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab04455b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2c9958a940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2aba120ab940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b12d9e0e940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b7431eb7940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab04fb4d940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ac06565e940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b61245e6940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abe8e94a940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b251ca5b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2af98bca6940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b12c8ebf940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b080bd9d940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2abb120ae940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b2d3802b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b06c7567940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b469fa65940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b0bb2677940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ad468f9b940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ae5053d9940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b04f4486940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2b1f6b18e940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function ReaderBase.__del__ at 0x2ab6e510d940>
+Traceback (most recent call last):
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/base.py", line 2165, in __del__
+  File "/home/ejakupov/mdanalysis/package/MDAnalysis/coordinates/H5MD.py", line 978, in close
+  File "/home/ejakupov/.conda/envs/mda2/lib/python3.8/site-packages/h5py-2.9.0-py3.8-linux-x86_64.egg/h5py/_hl/files.py", line 412, in close
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 264, in h5py.h5f.get_obj_ids
+  File "h5py/h5i.pyx", line 43, in h5py.h5i.wrap_identifier
+ImportError: sys.meta_path is None, Python is likely shutting down
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[43251,1],92]
+  Exit code:    1
+--------------------------------------------------------------------------
++ rm -r /scratch/ejakupov/Agave/temp/7495760
