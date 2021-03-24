@@ -1,0 +1,218 @@
++ module purge
++ '[' purge == load ']'
+++ /usr/bin/modulecmd bash purge
++ eval
++ '[' purge == load ']'
++ module load anaconda/py3
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load anaconda/py3
+                                                                 
+                                                                                
+##############################################                                  
+INFORMATION                                                                     
+##############################################                                  
+                                                                                
+You have loaded the base anaconda environment. For specialized environments,    
+you must first enable them with `source activate [env]`.                        
+                                                                                
+For a full list of environments, type `conda env list`                          
+  
++ eval INCLUDE=/packages/7x/anaconda3/5.3.0/include ';export' 'INCLUDE;INFOPATH=/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3' ';export' '_LMFILES_;unset' 'MODULEBUILDRC;unset' 'PERL5LIB;unset' 'PERL_LOCAL_LIB_ROOT;unset' 'PERL_MB_OPT;unset' 'PERL_MM_OPT;'
+++ INCLUDE=/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ LD_LIBRARY_PATH=/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3
+++ export _LMFILES_
+++ unset MODULEBUILDRC
+++ unset PERL5LIB
+++ unset PERL_LOCAL_LIB_ROOT
+++ unset PERL_MB_OPT
+++ unset PERL_MM_OPT
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load anaconda/py3
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ module load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
+++ /usr/bin/modulecmd bash load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+
+
+##############################################
+INFORMATION
+##############################################
+
+OpenMPI uses mpirun or mpiexec by default.
+
+To use srun, you must include the --mpi=pmi2 option.
+
+(e.g. srun --mpi=pmi2 ./executable)
+
+See the manpages for mpirun and srun for more
+information (e.g. man srun).
+
+
++ eval HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock ';export' 'HDF5_DIR;INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include' ';export' 'INCLUDE;INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info' ';export' 'INFOPATH;JAVA_HOME=/packages/7x/java/8u162' ';export' 'JAVA_HOME;LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' 'LOADEDMODULES;MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man' ';export' 'MANPATH;PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin' ';export' 'PATH;ZLIBCFLAGS=\' -I/packages/7x/zlib/1.2.8/include ';export' 'ZLIBCFLAGS;ZLIBLDFLAGS=\' -L/packages/7x/zlib/1.2.8/lib ';export' 'ZLIBLDFLAGS;_LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0' ';export' '_LMFILES_;'
+++ HDF5_DIR=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock
+++ export HDF5_DIR
+++ INCLUDE=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/include:/packages/7x/szip/2.1/include:/packages/7x/zlib/1.2.8/include:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/include:/packages/7x/hwloc/1.11.8/include:/packages/7x/anaconda3/5.3.0/include
+++ export INCLUDE
+++ INFOPATH=/packages/7x/zlib/1.2.8/share/info:/packages/7x/anaconda3/5.3.0/share/info
+++ export INFOPATH
+++ JAVA_HOME=/packages/7x/java/8u162
+++ export JAVA_HOME
+++ LD_LIBRARY_PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/lib:/packages/7x/szip/2.1/lib:/packages/7x/zlib/1.2.8/lib:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/lib:/packages/7x/hwloc/1.11.8/lib:/packages/7x/anaconda3/5.3.0/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=anaconda/py3:java/latest:hwloc/1.11.8:openmpi/3.0.0-gnu-stock:zlib/1.2.8:szip/2.1:hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export LOADEDMODULES
+++ MANPATH=/packages/7x/zlib/1.2.8/share/man:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/share/man:/packages/7x/hwloc/1.11.8/share/man:/packages/7x/java/8u162/man:/packages/7x/anaconda3/5.3.0/share/man:/usr/share/man:/usr/local/share/man
+++ export MANPATH
+++ PATH=/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
+++ ZLIBCFLAGS=' -I/packages/7x/zlib/1.2.8/include'
+++ export ZLIBCFLAGS
+++ ZLIBLDFLAGS=' -L/packages/7x/zlib/1.2.8/lib'
+++ export ZLIBLDFLAGS
+++ _LMFILES_=/usr/share/Modules/modulefiles/anaconda/py3:/usr/share/Modules/modulefiles/java/latest:/usr/share/Modules/modulefiles/hwloc/1.11.8:/usr/share/Modules/modulefiles/openmpi/3.0.0-gnu-stock:/usr/share/Modules/modulefiles/zlib/1.2.8:/usr/share/Modules/modulefiles/szip/2.1:/usr/share/Modules/modulefiles/hdf5/1.10.1-gnu-stock-openmpi-3.0.0
+++ export _LMFILES_
++ '[' load == load ']'
++ /usr/bin/modulecmd bash list -l
++ tail -n +3
++ cut '-d ' -f1
++ diff -c /tmp/ejakupov-prelist /tmp/ejakupov-postlist
++ grep --color=auto '^+'
++ sed 's/^+ //'
+++ cat /tmp/ejakupov-difflist
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load java/latest
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hwloc/1.11.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load openmpi/3.0.0-gnu-stock
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load zlib/1.2.8
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load szip/2.1
++ for bobsyeruncle_module_xxx in '$(cat /tmp/${USER}-difflist)'
++ /packages/sysadmin/environment_modules/database/module_db.py load hdf5/1.10.1-gnu-stock-openmpi-3.0.0
++ /bin/rm -f /tmp/ejakupov-prelist
++ /bin/rm -f /tmp/ejakupov-postlist
++ /bin/rm -f /tmp/ejakupov-difflist
++ /packages/sysadmin/slurm_scripts/module.py
++ source activate mda2
+++ _CONDA_ROOT=/packages/7x/anaconda3/5.3.0
+++ . /packages/7x/anaconda3/5.3.0/etc/profile.d/conda.sh
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n x ']'
++++ '[' -n '' ']'
++++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++++ dirname /packages/7x/anaconda3/5.3.0/bin
++++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate mda2
+++ '[' 2 -lt 1 ']'
+++ local cmd=activate
+++ shift
+++ case "$cmd" in
+++ __conda_activate activate mda2
+++ '[' -n '' ']'
+++ local cmd=activate
+++ shift
+++ local ask_conda
+++ OLDPATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ __add_sys_prefix_to_path
+++ '[' -n '' ']'
++++ dirname /packages/7x/anaconda3/5.3.0/bin/conda
+++ SYSP=/packages/7x/anaconda3/5.3.0/bin
++++ dirname /packages/7x/anaconda3/5.3.0/bin
+++ SYSP=/packages/7x/anaconda3/5.3.0
+++ '[' -n '' ']'
+++ PATH=/packages/7x/anaconda3/5.3.0/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ export PATH
++++ PS1=
++++ /packages/7x/anaconda3/5.3.0/bin/conda shell.posix activate mda2
+++ ask_conda='PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
+++ PATH=/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts/:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
+++ eval 'PS1='\''(mda2) '\''
+export PATH='\''/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin'\''
+export CONDA_PREFIX='\''/home/ejakupov/.conda/envs/mda2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''mda2'\''
+export CONDA_PROMPT_MODIFIER='\''(mda2) '\''
+export CONDA_EXE='\''/packages/7x/anaconda3/5.3.0/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/packages/7x/anaconda3/5.3.0/bin/python'\'''
++++ PS1='(mda2) '
++++ export PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ PATH=/home/ejakupov/.conda/envs/mda2/bin:/packages/7x/anaconda3/5.3.0/condabin:/packages/7x/hdf5/1.10.1/openmpi/3.0.0/gcc/stock/bin:/packages/7x/openmpi/agave/3.0.0/gcc/stock/normal/bin:/packages/7x/hwloc/1.11.8/bin:/packages/7x/java/8u162/bin:/packages/7x/anaconda3/5.3.0/bin:/usr/lib64/qt-3.3/bin:/home/ejakupov/perl5/bin:/packages/scripts:/packages/sysadmin/agave/scripts:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/packages/7x/perl5lib/bin:/home/ejakupov/.local/bin:/home/ejakupov/bin
++++ export CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ CONDA_PREFIX=/home/ejakupov/.conda/envs/mda2
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=mda2
++++ CONDA_DEFAULT_ENV=mda2
++++ export 'CONDA_PROMPT_MODIFIER=(mda2) '
++++ CONDA_PROMPT_MODIFIER='(mda2) '
++++ export CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ CONDA_EXE=/packages/7x/anaconda3/5.3.0/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
++++ CONDA_PYTHON_EXE=/packages/7x/anaconda3/5.3.0/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ testdir=/scratch/ejakupov/Agave/temp/8318558
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ mpiexec -n 42 python -W ignore /scratch/ejakupov/Agave/benchmarks/chunked/masked_array/scripts/benchmark.py /scratch/ejakupov/Agave/temp/8318558/YiiP_system.pdb /scratch/ejakupov/Agave/temp/8318558/YiiP_system_9ns_center100x_chunked.h5md run_1/2node_3
++ rm -r /scratch/ejakupov/Agave/temp/8318558

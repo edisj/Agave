@@ -1,0 +1,15 @@
++ sbatch --dependency=8318476 /scratch/ejakupov/Agave/benchmarks/contiguous/memory/scripts/6node154.sh run_1 2
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md
++ testdir=/scratch/ejakupov/Agave/temp/8318476
++ mkdir -p /scratch/ejakupov/Agave/temp/8318476
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/8318476
+
+real	0m6.985s
+user	0m0.000s
+sys	0m0.010s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md /scratch/ejakupov/Agave/temp/8318476
+
+real	94m55.920s
+user	0m0.339s
+sys	1m22.825s
