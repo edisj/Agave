@@ -85,7 +85,7 @@ def benchmark(topology, trajectory):
 
         return times_buffer
 
-    return None, None
+    return None
 
 
 class timeit(object):
