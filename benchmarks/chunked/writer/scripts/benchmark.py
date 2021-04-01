@@ -31,7 +31,7 @@ def benchmark(topology, trajectory):
         CA = u.select_atoms("protein and name CA")
         x_ref = CA.positions.copy()
         n_frames = len(u.trajectory)
-        n_atoms = u.trajecotry.n_atoms
+        n_atoms = u.trajectory.n_atoms
         slices = make_balanced_slices(n_frames, size,
                                       start=0, stop=n_frames, step=1)
         # give each rank unique start and stop points
