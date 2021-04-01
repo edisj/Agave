@@ -46,7 +46,7 @@ def benchmark(topology, trajectory):
     t_init_traj = init_traj.elapsed
 
     with timeit() as write_time:
-        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_contiguous.h5md",
+        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_chunked.h5md",
                         n_atoms=n_atoms, n_frames=n_frames,
                         positions=True, velocities=False, forces=False) as W:
             for ts in u.trajectory[start:stop]:
@@ -190,7 +190,7 @@ if __name__ == "__main__":
     times_array = benchmark(topology, trajectory)
 
     if rank == 0:
-        data_path = '/scratch/ejakupov/Agave/benchmarks/contiguous/writer/results/'
+        data_path = '/scratch/ejakupov/Agave/benchmarks/chunked/writer/results/'
 
         os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
 
