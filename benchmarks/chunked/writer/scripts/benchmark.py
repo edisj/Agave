@@ -48,7 +48,10 @@ def benchmark(topology, trajectory):
     with timeit() as write_time:
         with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_chunked.h5md",
                         n_atoms=n_atoms, n_frames=n_frames,
-                        positions=True, velocities=False, forces=False) as W:
+                        driver='mpio',
+                        comm=comm,
+                        positions=True, velocities=False, forces=False,
+                        chunks=(1,n_atoms,3)) as W:
             for ts in u.trajectory[start:stop]:
                 W.write(u)
     t_write = write_time.elapsed

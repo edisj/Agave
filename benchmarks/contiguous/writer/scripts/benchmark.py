@@ -48,6 +48,8 @@ def benchmark(topology, trajectory):
     with timeit() as write_time:
         with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_contiguous.h5md",
                         n_atoms=n_atoms, n_frames=n_frames,
+                        driver='mpio',
+                        comm=comm,
                         positions=True, velocities=False, forces=False) as W:
             for ts in u.trajectory[start:stop]:
                 W.write(u)
