@@ -14,7 +14,7 @@ parser.add_argument("test_traj", help="Path to trajectory testfile")
 parser.add_argument("directory_name", help="Name of directory the benchmark"
                     "results will be stored in")
 args = parser.parse_args()
-
+trial_number = args.directory_name[-1]
 
 comm = MPI.COMM_WORLD
 size = comm.Get_size()
@@ -46,7 +46,7 @@ def benchmark(topology, trajectory):
     t_init_traj = init_traj.elapsed
 
     with timeit() as write_time:
-        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_contiguous.h5md",
+        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_contiguous_{trial_number}.h5md",
                         n_atoms=n_atoms, n_frames=n_frames,
                         driver='mpio',
                         comm=comm,

@@ -22,6 +22,6 @@ testdir=/scratch/ejakupov/Agave/temp/$SLURM_JOB_DEPENDENCY
 
 export OMP_NUM_THREADS=1
 
-mpiexec -n 4 python -W ignore /scratch/ejakupov/Agave/benchmarks/contiguous/vanilla/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x_contiguous.h5md $1/1node_$2
+mpiexec -n 4 python -W ignore /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x_contiguous.h5md $1/1node_$2
 
 rm -r $testdir
