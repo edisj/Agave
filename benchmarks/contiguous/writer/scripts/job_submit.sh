@@ -7,7 +7,7 @@ for repeat in 1 2 3
 do
     sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node1.sh $1 $repeat
     sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node4.sh $1 $repeat
-    sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node8.sh $1 $repeat
+    #sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node8.sh $1 $repeat
     sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node14.sh $1 $repeat
     sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node28.sh $1 $repeat
     sbatch /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/2node56.sh $1 $repeat

@@ -1,0 +1,16 @@
++ sbatch --dependency=8684345 /scratch/ejakupov/Agave/benchmarks/contiguous/writer/scripts/1node1.sh run_1 1
+Submitted batch job 8684377
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md
++ testdir=/scratch/ejakupov/Agave/temp/8684345
++ mkdir -p /scratch/ejakupov/Agave/temp/8684345
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/8684345
+
+real	0m0.413s
+user	0m0.000s
+sys	0m0.010s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md /scratch/ejakupov/Agave/temp/8684345
+
+real	18m22.136s
+user	0m0.163s
+sys	1m34.860s
