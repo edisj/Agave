@@ -45,6 +45,7 @@ def benchmark(topology, trajectory):
     t_init_top = init_top.elapsed
     t_init_traj = init_traj.elapsed
 
+    t_write = 0
     with timeit() as write_time:
         with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{size}_process_chunked_{trial_number}.h5md",
                         n_atoms=n_atoms, n_frames=n_frames,
@@ -52,8 +53,10 @@ def benchmark(topology, trajectory):
                         comm=comm,
                         positions=True, velocities=False, forces=False) as W:
             for ts in u.trajectory[start:stop]:
-                W.write(u)
-    t_write = write_time.elapsed
+                with timeit() as write_frame:
+                    W.write(u)
+                t_write += write_frame.elapsed
+    total_write = write_time.elapsed
 
     # checking for straggling processes
     with timeit() as wait_time:
@@ -61,7 +64,7 @@ def benchmark(topology, trajectory):
     t_wait = wait_time.elapsed
 
     # total benchmark time per rank
-    total_time = t_init + t_write + t_wait
+    total_time = t_init + total_write + t_wait
 
     # close trajectory now to avoid MPI errors when MPI finalizes
     with timeit() as close_traj:
@@ -70,7 +73,7 @@ def benchmark(topology, trajectory):
 
     # collect all timings into this array
     block_times = np.array((rank, t_init, t_init_top, t_init_traj,
-                            t_write, t_write/bsize, t_wait,
+                            t_write, t_write/bsize, total_write, t_wait,
                             t_close_traj, total_time),
                             dtype=float)
     n_columns = len(block_times)
