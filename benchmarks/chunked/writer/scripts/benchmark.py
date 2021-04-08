@@ -202,7 +202,7 @@ if __name__ == "__main__":
         np.save(os.path.join(data_path, args.directory_name + '/',  f'{size}process_times.npy'), times_array)
 
         columns = ['rank', 't_init', 't_init_top', 't_init_traj',
-                    't_write', 't_write/frame', 't_wait',
+                    't_write', 't_write/frame', 'total_write', 't_wait',
                     't_close_traj', 'total_time']
         df = pd.DataFrame(times_array, columns=columns)
         df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{size}processes.csv'))
