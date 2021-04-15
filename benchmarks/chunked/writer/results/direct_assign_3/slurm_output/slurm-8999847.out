@@ -1,0 +1,16 @@
++ sbatch --dependency=8999847 /scratch/ejakupov/Agave/benchmarks/chunked/writer/scripts/1node8.sh direct_assign_3 3
+sbatch: error: Unable to open file /scratch/ejakupov/Agave/benchmarks/chunked/writer/scripts/1node8.sh
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_chunked.h5md
++ testdir=/scratch/ejakupov/Agave/temp/8999847
++ mkdir -p /scratch/ejakupov/Agave/temp/8999847
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/8999847
+
+real	0m0.868s
+user	0m0.000s
+sys	0m0.014s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_chunked.h5md /scratch/ejakupov/Agave/temp/8999847
+
+real	17m22.875s
+user	0m0.136s
+sys	1m43.830s
