@@ -2,9 +2,8 @@
 
 #SBATCH -N 16  # number of nodes
 #SBATCH -n 448  # number of cores
-#SBATCH -t 0-00:45:00   # time in d-hh:mm:ss
+#SBATCH -t 0-00:05:00   # time in d-hh:mm:ss
 #SBATCH -p parallel       # partition
-#SBATCH -C Broadwell
 #SBATCH -q normal       # QOS
 #SBATCH -o 16node448.%j.out # file to save job's STDOUT (%j = JobId)
 #SBATCH -e 16node448.%j.err # file to save job's STDERR (%j = JobId)
@@ -23,6 +22,6 @@ testdir=/scratch/ejakupov/Agave/temp/$SLURM_JOB_DEPENDENCY
 
 export OMP_NUM_THREADS=1
 
-mpiexec -n 448 python -W ignore /scratch/ejakupov/Agave/benchmarks/in_memory_2/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.h5md $1/16node_$2
+mpiexec -n 448 python -W ignore /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x_chunked.h5md $1/16node_$2
 
 rm -r $testdir
