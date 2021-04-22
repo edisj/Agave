@@ -2,7 +2,7 @@
 
 #SBATCH -N 1  # number of nodes
 #SBATCH -n 1  # number of cores
-#SBATCH -t 0-3:00:00   # time in d-hh:mm:ss
+#SBATCH -t 0-5:00:00   # time in d-hh:mm:ss
 #SBATCH -p serial       # partition
 #SBATCH -q normal       # QOS
 #SBATCH --mail-type=ALL # Send an e-mail when a job starts, stops, or fails
