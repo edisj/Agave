@@ -5,7 +5,7 @@ traj = '/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.
 
 u = mda.Universe(top, traj)
 
-with mda.Writer("YiiP_system_9ns_center100x_contiguous.trr",
+with mda.Writer("YiiP_system_9ns_center100x.trr",
                 n_atoms=u.trajectory.n_atoms,
                 positions=True) as W:
     for ts in u.trajectory:
