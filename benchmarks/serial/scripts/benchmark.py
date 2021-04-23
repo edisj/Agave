@@ -54,8 +54,8 @@ def benchmark(topology, trajectory):
 
     # collect all timings into this array
     block_times = np.array((t_init, t_init_top, t_init_traj,
-                            total_io, total_io/bsize,
-                            total_rmsd, total_rmsd/bsize,
+                            total_io, total_io/n_frames,
+                            total_rmsd, total_rmsd/n_frames,
                             t_close_traj, total_time),
                             dtype=float)
 
