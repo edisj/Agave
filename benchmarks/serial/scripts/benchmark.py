@@ -101,5 +101,5 @@ if __name__ == "__main__":
                 't_io', 't_io/frame',
                 't_rmsd', 't_rmsd/frame',
                 't_close_traj', 'total_time']
-    df = pd.DataFrame(times_array, columns=columns)
+    df = pd.DataFrame(times_array.reshape(-1,len(times_array)), columns=columns)
     df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{args.test_traj}.csv'))
