@@ -90,7 +90,7 @@ if __name__ == "__main__":
     times_array, rmsd_array = benchmark(topology, trajectory)
 
     data_path = '/scratch/ejakupov/Agave/benchmarks/serial/results/'
-    filename = args.directory_name.split(sep='.')[0]
+    filename = args.test_traj.split(sep='/')[-1].split(sep='.')[0]
 
     os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
 
