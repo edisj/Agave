@@ -44,7 +44,6 @@ def benchmark(topology, trajectory):
             rmsd_array[i] = rmsd(CA.positions, x_ref, superposition=True)
         total_rmsd += rms.elapsed
 
-    # close trajectory now to avoid MPI errors when MPI finalizes
     with timeit() as close_traj:
         u.trajectory.close()
     t_close_traj = close_traj.elapsed
@@ -91,15 +90,16 @@ if __name__ == "__main__":
     times_array, rmsd_array = benchmark(topology, trajectory)
 
     data_path = '/scratch/ejakupov/Agave/benchmarks/serial/results/'
+    filename = args.directory_name.split(sep='.')[0]
 
     os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
 
-    np.save(os.path.join(data_path, args.directory_name + '/',  f'{args.test_traj}_times.npy'), times_array)
-    np.save(os.path.join(data_path, args.directory_name + '/',  f'{args.test_traj}_rmsd.npy'), rmsd_array)
+    np.save(os.path.join(data_path, args.directory_name + '/',  f'{filename}_times.npy'), times_array)
+    np.save(os.path.join(data_path, args.directory_name + '/',  f'{filename}_rmsd.npy'), rmsd_array)
 
     columns = ['t_init', 't_init_top', 't_init_traj',
                 't_io', 't_io/frame',
                 't_rmsd', 't_rmsd/frame',
                 't_close_traj', 'total_time']
     df = pd.DataFrame(times_array.reshape(-1,len(times_array)), columns=columns)
-    df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{args.test_traj}.csv'))
+    df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{filename}.csv'))
