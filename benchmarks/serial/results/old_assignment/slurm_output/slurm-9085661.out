@@ -1,0 +1,13 @@
++ sbatch --dependency=9085661 /scratch/ejakupov/Agave/benchmarks/serial/scripts/h5md_default.sh old_assignment 4
+Submitted batch job 9085706
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x.h5md
++ testdir=/scratch/ejakupov/Agave/temp/9085661
++ mkdir -p /scratch/ejakupov/Agave/temp/9085661
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/9085661
+
+real	0m0.042s
+user	0m0.000s
+sys	0m0.011s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x.h5md /scratch/ejakupov/Agave/temp/9085661
+slurmstepd: error: *** JOB 9085661 ON cg17-7 CANCELLED AT 2021-04-23T00:03:45 ***

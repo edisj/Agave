@@ -1,0 +1,16 @@
++ sbatch --dependency=9085644 /scratch/ejakupov/Agave/benchmarks/serial/scripts/h5md_contiguous.sh old_assignment 1
+Submitted batch job 9085691
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md
++ testdir=/scratch/ejakupov/Agave/temp/9085644
++ mkdir -p /scratch/ejakupov/Agave/temp/9085644
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/9085644
+
+real	0m0.041s
+user	0m0.001s
+sys	0m0.011s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x_contiguous.h5md /scratch/ejakupov/Agave/temp/9085644
+
+real	86m20.610s
+user	0m0.256s
+sys	2m10.549s
