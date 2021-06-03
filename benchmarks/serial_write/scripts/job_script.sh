@@ -26,6 +26,6 @@ EXT=$3
 
 export OMP_NUM_THREADS=1
 
-python -W ignore /scratch/ejakupov/Agave/benchmarks/serial_write/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.$EXT $DIR_NAME/1node_$REPEAT
+python -W ignore /scratch/ejakupov/Agave/benchmarks/serial_write/scripts/benchmark.py $testdir/YiiP_system.pdb $testdir/YiiP_system_9ns_center100x.$EXT $DIR_NAME/$EXT$REPEAT
 
 rm -r $testdir

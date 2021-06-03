@@ -35,7 +35,7 @@ def benchmark(topology, trajectory):
                     W.write(u)
                 t_read += read_frame.elapsed
                 t_write += write_frame.elapsed
-    write_and_read = total.elapsed
+    write_and_read = total_time.elapsed
 
     times = np.array((write_and_read, t_read, t_write), dtype=float)
 
