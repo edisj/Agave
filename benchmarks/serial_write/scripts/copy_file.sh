@@ -9,10 +9,10 @@
 #echo commands to stdout
 set -x
 
-$JOB_SCRIPT=$1
-$DIR_NAME=$2
-$REPEAT=$3
-$EXT=$4
+JOB_SCRIPT=$1
+DIR_NAME=$2
+REPEAT=$3
+EXT=$4
 
 sbatch --dependency=$SLURM_JOB_ID $JOB_SCRIPT $DIR_NAME $REPEAT $EXT
 

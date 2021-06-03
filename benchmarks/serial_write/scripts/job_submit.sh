@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$DIR_NAME=$1
+DIR_NAME=$1
 
 mkdir -p /scratch/ejakupov/Agave/benchmarks/serial_write/results/$DIR_NAME/slurm_output
 cd /scratch/ejakupov/Agave/benchmarks/serial_write/results/$DIR_NAME/slurm_output

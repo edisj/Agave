@@ -20,9 +20,9 @@ source activate mda2
 
 testdir=/scratch/ejakupov/Agave/temp/$SLURM_JOB_DEPENDENCY
 
-$DIR_NAME=$1
-$REPEAT=$2
-$EXT=$3
+DIR_NAME=$1
+REPEAT=$2
+EXT=$3
 
 export OMP_NUM_THREADS=1
 
