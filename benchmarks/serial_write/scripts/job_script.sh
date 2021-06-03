@@ -2,7 +2,7 @@
 
 #SBATCH -N 1  # number of nodes
 #SBATCH -n 28  # number of cores
-#SBATCH -t 0-5:00:00   # time in d-hh:mm:ss
+#SBATCH -t 0-3:00:00   # time in d-hh:mm:ss
 #SBATCH -p parallel       # partition
 #SBATCH -q normal       # QOS
 #SBATCH -o job_script.%j.out # file to save job's STDOUT (%j = JobId)

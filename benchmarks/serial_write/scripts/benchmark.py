@@ -40,6 +40,28 @@ def benchmark(topology, trajectory):
 
     return times
 
+class timeit(object):
+    """measure time spend in context
+    :class:`timeit` is a context manager (to be used with the :keyword:`with`
+    statement) that records the execution time for the enclosed context block
+    in :attr:`elapsed`.
+    Attributes
+    ----------
+    elapsed : float
+        Time in seconds that elapsed between entering
+        and exiting the context.
+    """
+    def __enter__(self):
+        self._start_time = time.time()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        end_time = time.time()
+        self.elapsed = end_time - self._start_time
+        # always propagate exceptions forward
+        return False
+
+
 if __name__ == "__main__":
 
     topology, trajectory = (args.test_top, args.test_traj)
