@@ -20,10 +20,11 @@ def benchmark(topology, trajectory):
     """Benchmarks rmsd calculation for a given universe"""
     u = mda.Universe(topology, trajectory)
     n_frames = len(u.trajectory)
+    n_atoms = u.trajectory.n_atoms
 
     t_read = 0
     t_write = 0
-    with timeit() as write_time:
+    with timeit() as total_time:
         with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{ext.strip('.')}_throw_away_{trial_number}.h5md",
                         n_atoms=n_atoms,
                         positions=True, velocities=False, forces=False) as W:
@@ -34,7 +35,7 @@ def benchmark(topology, trajectory):
                     W.write(u)
                 t_read += read_frame.elapsed
                 t_write += write_frame.elapsed
-    write_and_read = write_time.elapsed
+    write_and_read = total.elapsed
 
     times = np.array((write_and_read, t_read, t_write), dtype=float)
 
@@ -73,8 +74,8 @@ if __name__ == "__main__":
 
         os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
 
-        np.save(os.path.join(data_path, args.directory_name + '/',  f'{size}process_times.npy'), times_array)
+        np.save(os.path.join(data_path, args.directory_name + '/',  f'serial_write.npy'), times_array)
 
         columns = ['Write and Read', 'Read Time', 'Write Time']
         df = pd.DataFrame(times_array, columns=columns)
-        df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'{size}processes.csv'))
+        df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'serial_write.csv'))
