@@ -77,5 +77,5 @@ if __name__ == "__main__":
     np.save(os.path.join(data_path, args.directory_name + '/',  f'serial_write.npy'), times_array)
 
     columns = ['Write and Read', 'Read Time', 'Write Time']
-    df = pd.DataFrame(times_array, columns=columns)
+    df = pd.DataFrame(times_array.reshape(-1, len(times_array)), columns=columns)
     df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'serial_write.csv'))
