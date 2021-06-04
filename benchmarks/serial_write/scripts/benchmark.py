@@ -25,7 +25,8 @@ def benchmark(topology, trajectory):
     t_read = 0
     t_write = 0
     with timeit() as total_time:
-        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/{ext.strip('.')}_throw_away_{trial_number}.h5md",
+        with mda.Writer(f"/scratch/ejakupov/Agave/temp/writer_benchmark/"
+                        f"{ext.strip('.')}_throw_away_{trial_number}.h5md",
                         n_atoms=n_atoms,
                         positions=True, velocities=False, forces=False) as W:
             for frame in range(n_frames):
