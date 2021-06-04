@@ -70,13 +70,12 @@ if __name__ == "__main__":
 
     times_array = benchmark(topology, trajectory)
 
-    if rank == 0:
-        data_path = '/scratch/ejakupov/Agave/benchmarks/serial_write/results/'
+    data_path = '/scratch/ejakupov/Agave/benchmarks/serial_write/results/'
 
-        os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
+    os.makedirs(os.path.join(data_path, args.directory_name + '/'), exist_ok=True)
 
-        np.save(os.path.join(data_path, args.directory_name + '/',  f'serial_write.npy'), times_array)
+    np.save(os.path.join(data_path, args.directory_name + '/',  f'serial_write.npy'), times_array)
 
-        columns = ['Write and Read', 'Read Time', 'Write Time']
-        df = pd.DataFrame(times_array, columns=columns)
-        df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'serial_write.csv'))
+    columns = ['Write and Read', 'Read Time', 'Write Time']
+    df = pd.DataFrame(times_array, columns=columns)
+    df.to_csv(os.path.join(data_path, args.directory_name + '/',  f'serial_write.csv'))
