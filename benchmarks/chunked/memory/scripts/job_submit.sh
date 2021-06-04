@@ -5,12 +5,12 @@ cd /scratch/ejakupov/Agave/benchmarks/chunked/memory/results/$1/slurm_output
 
 for repeat in 1 2 3
 do
-    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/1node1.sh $1 $repeat
-    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/1node28.sh $1 $repeat
-    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/2node56.sh $1 $repeat
-    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/4node112.sh $1 $repeat
+    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/1node1.sh $1 $repeat
+    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/1node28.sh $1 $repeat
+    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/2node56.sh $1 $repeat
+    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/4node112.sh $1 $repeat
     sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/6node168.sh $1 $repeat
-    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/8node224.sh $1 $repeat
-    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/12node336.sh $1 $repeat
-    #sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/16node448.sh $1 $repeat
+    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/8node224.sh $1 $repeat
+    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/12node336.sh $1 $repeat
+    sbatch /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/copy_file.sh /scratch/ejakupov/Agave/benchmarks/chunked/memory/scripts/16node448.sh $1 $repeat
 done
