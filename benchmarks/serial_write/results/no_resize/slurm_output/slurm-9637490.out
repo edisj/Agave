@@ -1,0 +1,20 @@
++ JOB_SCRIPT=/scratch/ejakupov/Agave/benchmarks/serial_write/scripts/job_script.sh
++ DIR_NAME=no_resize
++ REPEAT=5
++ EXT=xtc
++ sbatch --dependency=9637490 /scratch/ejakupov/Agave/benchmarks/serial_write/scripts/job_script.sh no_resize 5 xtc
+Submitted batch job 9637496
++ TEST_TOP=/scratch/ejakupov/Agave/datafiles/YiiP_system.pdb
++ TEST_TRAJ=/scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x.xtc
++ testdir=/scratch/ejakupov/Agave/temp/9637490
++ mkdir -p /scratch/ejakupov/Agave/temp/9637490
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system.pdb /scratch/ejakupov/Agave/temp/9637490
+
+real	0m0.200s
+user	0m0.000s
+sys	0m0.012s
++ cp /scratch/ejakupov/Agave/datafiles/YiiP_system_9ns_center100x.xtc /scratch/ejakupov/Agave/temp/9637490
+
+real	5m4.930s
+user	0m0.038s
+sys	0m30.329s
